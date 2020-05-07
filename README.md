@@ -20,12 +20,12 @@ Job1: #production_trigger1 and #production:
 3. Connected with SCM using Git repository url.
 
 Commands for environment creation:
-        if sudo docker ps | grep prodenv
+        if sudo docker ps | grep osone
         then
-        sudo docker rm -f prodenv
-        sudo docker run -dit -p 1212:80 -v /dev:/usr/local/apache2/htdocs --name prodenv httpd
+        sudo docker rm -f osone
+        sudo docker run -dit -p 8082:80 -v /dev:/usr/local/apache2/htdocs --name osone httpd
         else
-        sudo docker run -dit -p 1212:80 -v /ishweb:/usr/local/apache2/htdocs --name prodenv httpd
+        sudo docker run -dit -p 8082:80 -v /ishweb:/usr/local/apache2/htdocs --name osone httpd
         fi
 
 Command for storing data which is fetched from github: sudo cp -rvf * /ishb
