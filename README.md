@@ -3,18 +3,15 @@
 Task : to automate the process of integration of docker-git-jenkins
 
 Steps involved:-
-
-Repository:
-
 1. Created a repository locally #hometask using #Git_Bash
 2. Initialize #hometask and then created files #a.html and #b.html
 3. Added these files to the #Staging_area using command: git add .
 4. Connected #hometask repo to my #GitHub account using : git remote add "name" git_repo_url
-5. Commited all files to Github repo using git command: git commit . -m "comment"
-6. Created two branches #master and #dev1 using command: git branch branch_name and git push -u branch_name.
-7. Created a #git_hook called #post-commit using #bash_script and pushed #b.html from #dev1 branch using git commit . -m comment
+5. Commit all files to Github repo using git command: git commit . -m "comment"
+6. Create two branches #master and #dev1 using command: git branch branch_name and git push -u branch_name.
+7. Create a #git_hook called #post-commit using #bash_script and push #b.html from #dev1 branch using: git commit . -m comment
 
-In Jenkins, I created jobs for different task:
+In Jenkins:
 
 Job1: #production_trigger1 and #production:
 
